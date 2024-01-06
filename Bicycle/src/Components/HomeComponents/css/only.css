@@ -1,0 +1,33 @@
+#OnlyOnline .OnlyOnlineArea {
+  background-image: url(https://topbike-store-demo.myshopify.com/cdn/shop/files/countdown-v1.jpg?v=1613575291);
+  max-width: 1900px;
+  height: 120vh;
+  background-repeat: no-repeat;
+}
+#OnlyOnline .OnlyOnlineArea .OnlyOnlineBoxIn .OnlyOnlineBox {
+  margin-left: 200px;
+}
+#OnlyOnline .OnlyOnlineArea .OnlyOnlineBoxIn .OnlyOnlineBox h1 {
+  font-size: 60px;
+  color: #ff0000;
+}
+#OnlyOnline .OnlyOnlineArea .OnlyOnlineBoxIn .OnlyOnlineBox h3 {
+  font-size: 30px;
+}
+#OnlyOnline .OnlyOnlineArea .OnlyOnlineBoxIn .OnlyOnlineBox h5 {
+  font-size: 20px;
+  color: #ff0000;
+}
+#OnlyOnline .OnlyOnlineArea .OnlyOnlineBoxIn .OnlyOnlineBox .ButtonOnly {
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+}
+#OnlyOnline .OnlyOnlineArea .OnlyOnlineBoxIn .OnlyOnlineBox .ButtonOnly:hover {
+  background-color: #ff0000;
+  border: 1px solid #ff0000;
+  transition: 0.5s;
+}/*# sourceMappingURL=only.css.map */

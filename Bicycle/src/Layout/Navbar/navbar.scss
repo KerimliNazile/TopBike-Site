@@ -1,0 +1,111 @@
+.NavbarArea {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    gap: 200px;
+    padding: 40px ;
+   
+    
+    .topbike{
+        img{
+            width: 150px;
+        }
+    }
+    .MainNavbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        font-size: 24px;
+
+.subMenu2{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    display: none;
+    position: absolute;
+    border: 1px solid white;
+    background-color: rgb(159, 202, 188);
+    width: 1550px;
+    height: 600px;
+   left: -600px;
+   top: 70px;
+    li{
+        font-size: 18px;
+      
+    }
+    h2{
+        font-size: 22px;
+    }
+    
+}
+    }
+
+    .MainNavbar li {
+       
+        list-style: none;
+        position: relative;
+    a{
+        text-decoration: none;
+        color: blue;
+    }
+    }
+   
+    .NavbarIcons{
+        display: flex;
+        gap: 20px;
+        font-size: 25px;
+    }
+}
+.shop:hover .subMenu2{
+    display: block;
+    transition: .5s;
+}
+.SubMenuArea{
+    display: flex;
+    .InSubMenuShop{
+        ul{
+            margin-top: 40px;
+            li{
+                margin: 20px;
+            }
+            h2{
+                color: black;
+                border-bottom: 1px solid orange;
+                &:hover{
+                    color: orange;
+                }
+            }
+        }
+    }
+}
+
+.subMenu3{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    display: none;
+    position: absolute;
+    border: 1px solid white;
+    background-color: rgb(159, 202, 188);
+    width: 600px;
+    height: 400px;
+left: -300px;
+   top: 70px;
+   ul{
+    margin-top: 40px;
+   }
+    li{
+        font-size: 18px;
+      margin-top: 20px;
+    }
+    h2{
+        font-size: 18px;
+        border-bottom: 1px solid orange;
+    }
+    
+}
+.pages:hover .subMenu3{
+    display: block;
+    transition: .5s;
+} 
