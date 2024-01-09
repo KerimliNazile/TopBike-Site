@@ -1,19 +1,18 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-const Shop = () => {
+const Contact = () => {
   return (
     <>
       <Helmet>
         <meta name="description" content="Your page description" />
-        <title>Shop Page </title>
+        <title>Contact Page </title>
 
       </Helmet>
 
       <div>Shop</div>
     </>
-
   )
 }
 
-export default Shop
+export default Contact

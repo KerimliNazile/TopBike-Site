@@ -5,6 +5,7 @@ import { IoPersonOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa6";
 import { CgShoppingBag } from "react-icons/cg";
 import { NavLink } from 'react-router-dom'
+import Contact from '../../Pages/ContactPage/contact';
 
 const Navbar = () => {
     return (
@@ -116,7 +117,7 @@ const Navbar = () => {
                                         <h2>PRE - BUILD PAGES</h2>
                                         <li>About Us</li>
                                         <li>About Us #2</li>
-                                        <li>Contact Us</li>
+                                        <li><NavLink style={{ color: 'black' }} to={"/contact"}>Contact</NavLink></li>
                                         <li>Contact Us #2</li>
                                         <li>FAQs</li>
                                         <li>404 Page</li>

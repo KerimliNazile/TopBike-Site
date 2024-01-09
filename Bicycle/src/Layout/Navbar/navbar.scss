@@ -29,7 +29,7 @@
     width: 1550px;
     height: 600px;
    left: -600px;
-   top: 70px;
+   top: 25px;
     li{
         font-size: 18px;
       
@@ -58,6 +58,10 @@
     }
 }
 .shop:hover .subMenu2{
+    display: block;
+    transition: .5s;
+}
+.subMenu2:hover{
     display: block;
     transition: .5s;
 }
@@ -91,7 +95,7 @@
     width: 600px;
     height: 400px;
 left: -300px;
-   top: 70px;
+   top: 25px;
    ul{
     margin-top: 40px;
    }
