@@ -1,21 +1,23 @@
 .NavbarArea {
     display: flex;
-    justify-content:center ;
+    justify-content:space-between ;
     align-items: center;
-    gap: 200px;
-    padding: 40px ;
-   
+    gap: 40px;
+    padding: 30px 140px;
+   position: absolute;
     
+   
     .topbike{
         img{
             width: 150px;
+            color: white;
         }
     }
     .MainNavbar {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 100px;
+        gap: 70px;
         font-size: 24px;
 
 .subMenu2{
@@ -47,7 +49,7 @@
         position: relative;
     a{
         text-decoration: none;
-        color: blue;
+        color: white;
     }
     }
    
@@ -55,6 +57,7 @@
         display: flex;
         gap: 20px;
         font-size: 25px;
+        color: white;
     }
 }
 .shop:hover .subMenu2{

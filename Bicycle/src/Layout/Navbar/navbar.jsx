@@ -5,14 +5,14 @@ import { IoPersonOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa6";
 import { CgShoppingBag } from "react-icons/cg";
 import { NavLink } from 'react-router-dom'
-import Contact from '../../Pages/ContactPage/contact';
+
 
 const Navbar = () => {
     return (
         <>
             <div className="NavbarArea">
                 <div className="topbike">
-                    <img src="https://topbike-store-demo.myshopify.com/cdn/shop/files/LOGO.png?v=1613575279" alt="" />
+                    <img src="https://topbike-store-demo.myshopify.com/cdn/shop/files/Untitled-2.png?v=1613575289" alt="" />
                 </div>
                 <div className="MainNavbararea">
                     <ul className='MainNavbar'>
