@@ -1,10 +1,9 @@
 
 import express from 'express'
 import cors from 'cors'
-import bodyParser from 'body-parser'
 import mongoose, { Schema } from 'mongoose'
 import dotenv from 'dotenv'
-
+const app = express()
 dotenv.config()
 
 const treeSchema = new Schema({
@@ -12,12 +11,11 @@ const treeSchema = new Schema({
     price: { type: Number, required: true }
 }, { timestamps: true })
 
-const app = express
+
 
 app.use(cors())
 app.use(express.json())
 
-app.use(bodyParser.json())
 
 const Trees = mongoose.model('trees', treeSchema);
 
@@ -27,7 +25,7 @@ const Trees = mongoose.model('trees', treeSchema);
 app.get('/trees', async (req, res) => {
     try {
         const trees = await Trees.find({})
-        res.send('trees')
+        res.send(trees)
     } catch (error) {
         res.status(500).json({ message: error })
     }
@@ -41,7 +39,7 @@ app.get('/trees', async (req, res) => {
 app.get('/trees/:id', async (req, res) => {
     try {
         const trees = await Trees.findById(req.params.id)
-        res.send('trees')
+        res.send(trees)
     } catch (error) {
         res.status(500).json({ message: error })
     }
@@ -79,7 +77,7 @@ app.delete('/trees/:id', async (req, res) => {
 const port = process.env.PORT
 const url = process.env.URL.replace("<password>", process.env.PASSWORD)
 
-mongoose.connect('mongodb+srv://nazilek:nazilek@cluster0.haleq1p.mongodb.net/')
+mongoose.connect(url)
     .then(() => console.log("Connected db"))
     .catch(err => console.log("Db not connect" + err))
 app.listen(port, () => {
