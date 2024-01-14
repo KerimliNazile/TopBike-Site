@@ -5,6 +5,8 @@
   background-repeat: no-repeat;
 }
 #OnlyOnline .OnlyOnlineArea .OnlyOnlineBoxIn .OnlyOnlineBox {
+  position: relative;
+  top: 200px;
   margin-left: 200px;
 }
 #OnlyOnline .OnlyOnlineArea .OnlyOnlineBoxIn .OnlyOnlineBox h1 {

@@ -1,5 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import Contactt from '../../Components/ContactComponents/HeaderContact'
+import ContactComponents from '../../Components/ContactComponents/FormikContact'
 
 const Contact = () => {
   return (
@@ -10,7 +12,10 @@ const Contact = () => {
 
       </Helmet>
 
-      <div>Shop</div>
+      <div>
+        <Contactt/>
+        <ContactComponents/>
+      </div>
     </>
   )
 }

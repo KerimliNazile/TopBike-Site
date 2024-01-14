@@ -1,61 +1,110 @@
-#latestnews {
+#shopify {
+  margin: 50px 0;
   width: 100%;
-  height: 70vh;
+  height: 50vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
-#latestnews h2 {
-  margin-bottom: 40px;
-  font-size: 60px;
-  font-weight: 500;
-  line-height: 1.2;
-  color: #000;
-  text-transform: none;
-  border: none;
-  border-color: #000;
-  display: inline-block;
-}
-#latestnews .latestnewsbox {
-  width: 90%;
+#shopify .shopifybox {
+  width: 100%;
   display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
 }
-#latestnews .latestnewsbox .card {
+#shopify .shopifybox .card {
   width: 30%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  overflow: hidden;
+  position: relative;
 }
-#latestnews .latestnewsbox .card h4 {
-  font-size: 12px;
-  font-weight: 500;
-  color: #83868c;
-  text-transform: uppercase;
-}
-#latestnews .latestnewsbox .card a {
-  font-size: 22px;
-  display: inline-block;
-  color: #000;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-#latestnews .latestnewsbox .card p {
-  color: #979797;
-  font-weight: 400;
-  margin-top: 10px;
-  color: #83868c;
-}
-#latestnews .latestnewsbox .card button {
-  width: 100px;
+#shopify .shopifybox .card span {
   font-size: 20px;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid black;
-  text-align: left;
-}
-#latestnews .latestnewsbox .card img {
+  opacity: 0;
   width: 100%;
+  height: 15%;
+  z-index: 3;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6);
+  transition: 0.5s;
+}
+#shopify .shopifybox .card img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+#shopify .shopifybox .card img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+#shopify .shopifybox .card img:hover + span {
+  opacity: 1;
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+#shopify .shopifybox .card span:hover {
+  opacity: 1;
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 674px) {
+  #shopify {
+    margin: 50px 0;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+  }
+  #shopify .shopifybox {
+    width: 90%;
+    gap: 20px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+  }
+  #shopify .shopifybox .card {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  #shopify .shopifybox .card span {
+    font-size: 20px;
+    opacity: 0;
+    width: 100%;
+    height: 15%;
+    z-index: 3;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+  }
+  #shopify .shopifybox .card img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+  }
+  #shopify .shopifybox .card img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  #shopify .shopifybox .card img:hover + span {
+    opacity: 1;
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
+  #shopify .shopifybox .card span:hover {
+    opacity: 1;
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
 }/*# sourceMappingURL=index.css.map */

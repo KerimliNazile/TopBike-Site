@@ -7,8 +7,9 @@
        .OnlyOnlineBoxIn{
         
         .OnlyOnlineBox{
-       margin-left: 200px;
-    
+     position: relative;
+     top:200px;
+    margin-left: 200px;
        h1{
         font-size: 60px;
         color: #ff0000;

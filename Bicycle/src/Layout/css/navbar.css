@@ -105,4 +105,107 @@
 .pages:hover .subMenu3 {
   display: block;
   transition: 0.5s;
+}
+
+@media screen and (max-width: 1124px) {
+  .NavbarArea {
+    background-color: rgb(104, 101, 101);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 30px 140px;
+  }
+  .NavbarArea .topbike img {
+    width: 150px;
+    color: white;
+  }
+  .NavbarArea .MainNavbar {
+    display: none;
+    gap: 70px;
+    font-size: 24px;
+  }
+  .NavbarArea .MainNavbar .subMenu2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    border: 1px solid white;
+    background-color: rgb(159, 202, 188);
+    width: 1550px;
+    height: 600px;
+    left: -600px;
+    top: 25px;
+  }
+  .NavbarArea .MainNavbar .subMenu2 li {
+    font-size: 18px;
+  }
+  .NavbarArea .MainNavbar .subMenu2 h2 {
+    font-size: 22px;
+  }
+  .NavbarArea .MainNavbar li {
+    list-style: none;
+    position: relative;
+  }
+  .NavbarArea .MainNavbar li a {
+    text-decoration: none;
+    color: black;
+  }
+  .NavbarArea .NavbarIcons {
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+    color: black;
+  }
+  .shop:hover .subMenu2 {
+    display: block;
+    transition: 0.5s;
+  }
+  .subMenu2:hover {
+    display: block;
+    transition: 0.5s;
+  }
+  .SubMenuArea {
+    display: flex;
+  }
+  .SubMenuArea .InSubMenuShop ul {
+    margin-top: 40px;
+  }
+  .SubMenuArea .InSubMenuShop ul li {
+    margin: 20px;
+  }
+  .SubMenuArea .InSubMenuShop ul h2 {
+    color: black;
+    border-bottom: 1px solid orange;
+  }
+  .SubMenuArea .InSubMenuShop ul h2:hover {
+    color: orange;
+  }
+  .subMenu3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: absolute;
+    border: 1px solid white;
+    background-color: rgb(159, 202, 188);
+    width: 600px;
+    height: 400px;
+    left: -300px;
+    top: 25px;
+  }
+  .subMenu3 ul {
+    margin-top: 40px;
+  }
+  .subMenu3 li {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .subMenu3 h2 {
+    font-size: 18px;
+    border-bottom: 1px solid orange;
+  }
+  .pages:hover .subMenu3 {
+    display: block;
+    transition: 0.5s;
+  }
 }/*# sourceMappingURL=navbar.css.map */
