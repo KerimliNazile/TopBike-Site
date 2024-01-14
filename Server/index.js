@@ -5,27 +5,28 @@ import mongoose, { Schema } from 'mongoose'
 import dotenv from 'dotenv'
 const app = express()
 dotenv.config()
+app.use(cors())
+app.use(express.json())
 
-const treeSchema = new Schema({
+const wordSchema = new Schema({
+    image:{type:String,required:true},
     name: { type: String, required: true },
     price: { type: Number, required: true }
 }, { timestamps: true })
 
 
 
-app.use(cors())
-app.use(express.json())
 
 
-const Trees = mongoose.model('trees', treeSchema);
+const Words = mongoose.model('Words', wordSchema);
 
 
 //Get All Users
 
-app.get('/trees', async (req, res) => {
+app.get('/words', async (req, res) => {
     try {
-        const trees = await Trees.find({})
-        res.send(trees)
+        const words= await Words.find({})
+        res.send(words)
     } catch (error) {
         res.status(500).json({ message: error })
     }
@@ -36,10 +37,10 @@ app.get('/trees', async (req, res) => {
 
 //Get by Id
 
-app.get('/trees/:id', async (req, res) => {
+app.get('/words/:id', async (req, res) => {
     try {
-        const trees = await Trees.findById(req.params.id)
-        res.send(trees)
+        const words = await Words.findById(req.params.id)
+        res.send(words)
     } catch (error) {
         res.status(500).json({ message: error })
     }
@@ -52,21 +53,27 @@ app.get('/trees/:id', async (req, res) => {
 
 //Add user
 
-app.post('/trees', (req, res) => {
-    const tree = new Trees({
+app.post('/words', async(req, res) => {
+   try {
+    const word = new Words({
+        image:req.body.image,
         name: req.body.name,
         price: req.body.price
     })
-    tree.save()
-    res.send({ message: "Trees created" })
+    await word.save()
+    
+    res.send({ message: "Words created" })
+   } catch (error) {
+    res.status(500).json({ message: error })
+   }
 })
 
 
 //Delete User
-app.delete('/trees/:id', async (req, res) => {
+app.delete('/words/:id', async (req, res) => {
     try {
-        const trees = await Trees.findByIdAndDelete(req.params.id)
-        res.status(500).json({ message: "Trees Deleted" })
+        const words = await Words.findByIdAndDelete(req.params.id)
+        res.status(500).json({ message: "Words Deleted" })
     } catch (error) {
         res.status(500).json({ message: error })
     }

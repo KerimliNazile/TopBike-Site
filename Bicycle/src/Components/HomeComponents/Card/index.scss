@@ -1,0 +1,48 @@
+.CardArea{
+    .CardIcon{
+display: flex;
+align-items: center;
+gap: 10px;
+font-size: 20px;
+.FaHeart{
+    &:hover{
+        color: brown;
+        font-size: 21px;
+        transition: 0.3s;
+    }
+}
+.FaEye{
+    color: black;
+    &:hover{
+        color:orange;
+        transition: 0.3s;
+        font-size: 21px;
+
+    }
+}
+.SlBasket{
+    &:hover{
+        color: orange;
+        transition: 0.3s;
+        font-size: 21px;
+    }
+}
+    }
+    .ImageCard{
+        img{
+            width: 100%;
+        }
+    }
+    .CardContent{
+        h1{
+            font-size: 20px;
+            &:hover{
+                color: orange;
+                transition: 0.3s;
+            }
+        }
+        h2{
+            color: orange;
+        }
+    }
+}

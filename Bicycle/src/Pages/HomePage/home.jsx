@@ -1,8 +1,11 @@
 import React from 'react'
-import Header from '../../Components/HomeComponents/Header'
-import Spofiy from '../../Components/HomeComponents/SpofiySection/spofiy'
-import Only from '../../Components/HomeComponents/OnlyOnline/only'
 import { Helmet } from 'react-helmet'
+import Bicycle from '../../Components/HomeComponents/BcycleSection'
+import Header from '../../Components/HomeComponents/Header'
+import LatestNews from '../../Components/HomeComponents/LatestNewsSection'
+import NewProduct from '../../Components/HomeComponents/NewProduct'
+import Only from '../../Components/HomeComponents/OnlyOnline/only'
+import Services from '../../Components/HomeComponents/SpofiySection/spofiy'
 
 const Home = () => {
   return (
@@ -17,8 +20,11 @@ const Home = () => {
 
     <div>
         <Header/>
-        <Spofiy/>
+        <Services/>
+        <NewProduct/>
         <Only/>
+        <Bicycle/>
+        <LatestNews/>
     </div>
     </>
   )

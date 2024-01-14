@@ -1,24 +1,29 @@
-#Spofiy .SpofiyArea {
+#services {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 40px;
+  align-items: center;
+  padding: 50px 0px;
 }
-#Spofiy .SpofiyArea .SpofiyBox {
-  border: 1px solid rgb(168, 166, 166);
-  min-width: 450px;
-  max-height: 180px;
+#services .servicesbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
 }
-#Spofiy .SpofiyArea .SpofiyBox .SpofiyBoxIn {
-  margin-top: 20px;
-  text-align: center;
+#services .servicesbox .servicescard {
+  width: 30%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0px;
 }
-#Spofiy .SpofiyArea .SpofiyBox .SpofiyBoxIn img {
-  width: 50px;
+#services .servicesbox .servicescard img {
+  width: 46px;
+  height: 46px;
 }
-#Spofiy .SpofiyArea .SpofiyBox .SpofiyBoxIn h5 {
-  font-size: 18px;
-}
-#Spofiy .SpofiyArea .SpofiyBox .SpofiyBoxIn p {
+#services .servicesbox .servicescard h4 {
   font-size: 20px;
 }/*# sourceMappingURL=spofiy.css.map */

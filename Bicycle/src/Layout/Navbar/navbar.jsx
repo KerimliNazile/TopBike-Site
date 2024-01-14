@@ -16,7 +16,7 @@ const Navbar = () => {
                 </div>
                 <div className="MainNavbararea">
                     <ul className='MainNavbar'>
-                        <li><NavLink to={"/home"}>Home</NavLink>
+                        <li><NavLink to={"/"}>Home</NavLink>
                             <div className="subMenu1">
 
                             </div>
@@ -148,7 +148,7 @@ const Navbar = () => {
                 <div className="NavbarIcons">
                     <IoSearch />
                     <IoPersonOutline />
-                    <FaRegHeart />
+                    <NavLink to={"/wishlist"}><FaRegHeart /></NavLink>
                     <CgShoppingBag />
                 </div>
             </div>

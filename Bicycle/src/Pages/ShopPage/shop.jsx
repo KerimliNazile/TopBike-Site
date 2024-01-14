@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import Shopp from '../../Components/ShopComponents/HeaderShop'
 
 const Shop = () => {
   return (
@@ -10,7 +11,9 @@ const Shop = () => {
 
       </Helmet>
 
-      <div>Shop</div>
+      <div>
+        <Shopp/>
+      </div>
     </>
 
   )
