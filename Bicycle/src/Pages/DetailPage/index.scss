@@ -1,0 +1,23 @@
+.DetailArea{
+    margin-top: 100px;
+    .DetailCard{
+        
+        width: 800px;
+        border: 1px solid rgb(182, 182, 240);
+        border-radius:20px;
+        margin-left: 600px;
+       
+       
+        img{
+            width: 28%;
+        }
+        h1{
+            font-size: 30px;
+            color: green;
+        }
+        h2{
+            color: green;
+            font-size: 30px;
+        }
+    }
+}

@@ -1,14 +1,15 @@
 import React, { useContext } from 'react'
 import { WishlistContext } from '../../context/WishlistContext'
-
+import './index.scss'
 const Wishlist = () => {
     const {wish,deleteWish}=useContext(WishlistContext)
   return (
-    <div>
-        <h1>Wishlist</h1>
+    <>
+      <div className="Wishlist">
+ <h1>Wishlist</h1>
         {
             wish && wish.map(x=>
-                <ul>
+                <ul className='wishlistUl'>
                     <li><img src={x.image} alt="" /></li>
                     <li>{x.name}</li>
                     <li>{x.price}</li>
@@ -16,7 +17,9 @@ const Wishlist = () => {
                 </ul>
                 )
         }
-    </div>
+      </div>
+       
+    </>
   )
 }
 

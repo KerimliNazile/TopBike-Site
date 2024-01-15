@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-
+import './index.scss'
 const DetailPage = () => {
   const [detail, setDetail] = useState()
   const { id } = useParams()
@@ -15,6 +15,7 @@ const DetailPage = () => {
 
   return (
     <>
+    <h1>Detail</h1>
       <div className="DetailArea">
         {detail ? <>
           <div className="DetailCard">

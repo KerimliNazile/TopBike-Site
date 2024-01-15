@@ -1,23 +1,45 @@
-import React from 'react'
+
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+
+import 'swiper/css';
+import 'swiper/css/navigation';
 import './index.scss'
-const Header = () => {
+
+
+import { Navigation } from 'swiper/modules';
+
+export default function Header() {
   return (
     <>
-    <div id='header-section'>
-       <div className="road">
-        <img src="https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_4.jpg?v=1613575294" alt="" />
-        <div className="content-tit">
-          <h3>Off Road Bicycle</h3>
-          <p>Here to bring your life style to the next level.</p>
-          <div className="butonn">
-          SHOP NOW
+      <Swiper navigation={true}
+        slidesPerView={1}
+        spaceBetween={30}
+        modules={[Navigation]}
+        className="mySwiper">
+        <SwiperSlide>
+          <div className="HeaderArea">
+            <img src="https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_4.jpg?v=1613575294" alt="" />
+            <div className="HeaderText">
+              <h1>Off Road Bicycle</h1>
+              <h6>Here to bring your life style to the next level.</h6>
+              <button className='HeadBtn'>Shop Now</button>
+            </div>
           </div>
-        </div>
-       </div>
-      
-    </div>
-    </>
-  )
-}
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="HeaderArea">
+            <img src="https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_3.jpg?v=1613575289" alt="" />
+            <div className="HeaderText">
+              <h1>Off Road Bicycle</h1>
+              <h6>Here to bring your life style to the next level.</h6>
+              <button className='HeadBtn'>Shop Now</button>
+            </div>
+          </div>
+        </SwiperSlide>
 
-export default Header
+      </Swiper>
+    </>
+  );
+}

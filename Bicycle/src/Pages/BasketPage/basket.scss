@@ -1,0 +1,37 @@
+.Baskett{
+   h1{
+   font-size: 42px;
+    color: rgb(107, 47, 47);
+   }
+    background-color:rgb(212, 181, 61) ;
+    .BasketUl{
+        margin-top: 100px;
+        margin-left: 400px;
+        .Inrease{
+            display: flex;
+        }
+        button{
+            color: red;
+            font-size: 26px;
+            height: 50px;
+            width: 80px;
+        }
+        img{
+            width: 30%;
+        }
+        .delete{
+            width: 200px;
+        }
+       .BasketUl li{
+        text-decoration: none;
+        list-style: none;
+        font-size: 30px;
+        a{
+            font-size: 30px;
+            list-style: none;
+        }
+       }
+    }
+      
+    
+}

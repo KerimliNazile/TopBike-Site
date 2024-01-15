@@ -1,0 +1,35 @@
+.Baskett {
+  background-color: rgb(212, 181, 61);
+}
+.Baskett h1 {
+  font-size: 42px;
+  color: rgb(107, 47, 47);
+}
+.Baskett .BasketUl {
+  margin-top: 100px;
+  margin-left: 400px;
+}
+.Baskett .BasketUl .Inrease {
+  display: flex;
+}
+.Baskett .BasketUl button {
+  color: red;
+  font-size: 26px;
+  height: 50px;
+  width: 80px;
+}
+.Baskett .BasketUl img {
+  width: 30%;
+}
+.Baskett .BasketUl .delete {
+  width: 200px;
+}
+.Baskett .BasketUl .BasketUl li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 30px;
+}
+.Baskett .BasketUl .BasketUl li a {
+  font-size: 30px;
+  list-style: none;
+}/*# sourceMappingURL=basket.css.map */

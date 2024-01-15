@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { FaHeart } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
-import { SlBasket } from "react-icons/sl";
+import { CgShoppingBag } from "react-icons/cg";
 import { Link } from 'react-router-dom'
 import './index.scss'
 import { WishlistContext } from '../../../context/WishlistContext';
@@ -17,7 +17,7 @@ const Card = ({ id, image, name, price, product }) => {
         <div className="CardIcon">
           <div onClick={() => addWish(product)} ><FaHeart className='FaHeart' /></div>
           <div><Link to={`/${id}`}><FaEye className='FaEye' /></Link></div>
-         <div onClick={()=> addBasket(product)}> <SlBasket className='SlBasket' /></div>
+         <div onClick={()=> addBasket(product)}> <CgShoppingBag className='SlBasket'/> </div>
         </div>
         <div className="ImageCard">
           <img src={image} alt="" />

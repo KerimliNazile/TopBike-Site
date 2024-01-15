@@ -4,9 +4,10 @@
     align-items: center;
     gap: 40px;
     padding: 30px 140px;
-   position: absolute;
     
-   
+   position:absolute;
+   z-index: 2;
+
     .topbike{
         img{
             width: 150px;
