@@ -10,6 +10,7 @@ import Blog from './Pages/BlogsPage/blog'
 import Contact from './Pages/ContactPage/contact'
 import Wishlist from './Pages/WishlistPage/wishlist'
 import DetailPage from './Pages/DetailPage/detail'
+import Basket from './Pages/BasketPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,6 +27,7 @@ function App() {
           <Route path='/contact' element={<Contact />}></Route>
           <Route path='/wishlist' element={<Wishlist />}></Route>
           <Route path='/:id' element={<DetailPage />}></Route>
+          <Route path='basket' element={<Basket />}></Route>
         </Route>
       </Routes>
     </>

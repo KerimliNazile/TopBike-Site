@@ -149,7 +149,8 @@ const Navbar = () => {
                     <IoSearch />
                     <IoPersonOutline />
                     <NavLink to={"/wishlist"}><FaRegHeart /></NavLink>
-                    <CgShoppingBag />
+                    <NavLink to={"/basket"}><CgShoppingBag /></NavLink>
+                    
                 </div>
             </div>
         </>

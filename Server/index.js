@@ -73,7 +73,7 @@ app.post('/words', async(req, res) => {
 app.delete('/words/:id', async (req, res) => {
     try {
         const words = await Words.findByIdAndDelete(req.params.id)
-        res.status(500).json({ message: "Words Deleted" })
+        res.status(200).json({ message: "Words Deleted" })
     } catch (error) {
         res.status(500).json({ message: error })
     }

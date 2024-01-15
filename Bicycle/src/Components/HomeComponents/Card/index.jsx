@@ -5,9 +5,11 @@ import { SlBasket } from "react-icons/sl";
 import { Link } from 'react-router-dom'
 import './index.scss'
 import { WishlistContext } from '../../../context/WishlistContext';
+import { BasketContext } from '../../../context/BasketContext';
 
 const Card = ({ id, image, name, price, product }) => {
   const { addWish } = useContext(WishlistContext)
+  const {addBasket}=useContext(BasketContext)
   console.log(id);
   return (
     <div>
@@ -15,7 +17,7 @@ const Card = ({ id, image, name, price, product }) => {
         <div className="CardIcon">
           <div onClick={() => addWish(product)} ><FaHeart className='FaHeart' /></div>
           <div><Link to={`/${id}`}><FaEye className='FaEye' /></Link></div>
-          <SlBasket className='SlBasket' />
+         <div onClick={()=> addBasket(product)}> <SlBasket className='SlBasket' /></div>
         </div>
         <div className="ImageCard">
           <img src={image} alt="" />
